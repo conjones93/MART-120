@@ -1,0 +1,53 @@
+main {
+      height: 400px;
+      width: 640px;
+      background-color: green;
+      border: 2px solid black;
+      text-align: center;
+      margin: 240px;
+      padding: 80px;
+
+}
+
+body {
+ background-image: url("https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/WOPA160517_D056-resized.jpg?crop=864%2C0%2C1728%2C2304&wid=600&hei=800&scl=2.88");
+ background-color: #cccccc;
+ font-family: cursive;
+ color: orange;
+}
+
+div {
+   font-family: 'times new roman', 'Arial', 'cursive';
+   color: blue;
+text-align: center;
+}
+
+span {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:brown;
+  font-size: large;
+
+}
+
+.myClass {
+   font-size: 50px;
+   color: black;
+   font-weight: bolder;
+
+}
+
+#myId {
+  font-size: 80px;
+  color: green;
+  font-weight: bold;
+
+}
+p {
+     font-family: fantasy;
+     color: darkblue;
+
+}
+h1 {
+      font-family: fantasy;
+      color: red;
+}
