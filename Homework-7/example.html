@@ -1,0 +1,57 @@
+<html>
+<style>
+.error{
+  background-color:#de8782;
+}
+
+.hidden{
+  opacity:0%;
+}
+</style>
+
+<center>
+<br>
+  <label for="firstname">First Name*</label>
+  <br>
+  <input type="text" id="firstname">
+  <br>
+  <label style="color:red" id="labelFName"></label>
+  <br>
+  <button id="button">Submit</button>
+
+  <h3 id="confirm"></h3>
+
+<div id="funContainer" class="hidden">
+  <iframe id="fun" src="https://giphy.com/embed/klYzRJwHUUWxW" width="480" height="304" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+</div>
+</center>
+  <script>
+  let input = document.getElementById("button");
+  let success = false;
+  input.onclick = function(e){
+    let firstName = document.getElementById("firstname");
+    if (firstName.value == undefined || firstName.value == ""){
+      let labelFName = document.getElementById("labelFName");
+      labelFName.innerText = "First name is required.";
+      firstName.className = "error";
+      success = false;
+    }
+    else{
+      firstName.className = "";
+      labelFName.innerText = "";
+      success = true;
+    }
+
+    let confirmation = document.getElementById("confirm");
+    let image = document.getElementById("funContainer");
+    if(success){
+      confirmation.innerText = firstName.value + " is a really nice name.";
+      image.className = "";
+    }
+    else{
+      confirmation.innerText = "There is a problem with the input provided.";
+      image.className = "hidden";
+    }
+  }
+  </script>
+</html>
